@@ -1,6 +1,8 @@
 @import "/src/colors.scss";
 
 .sidebarBox {
+  position: fixed;
+  left: 0;
   background-color: $secondary-background;
   color: $text-highlight-color;
   width: 1rem;
@@ -15,7 +17,8 @@
   &:hover,
   &.expanded {
     width: 20rem;
-    position: relative;
+    position: fixed;
+    left: 0;
 
     .sidebar ul {
       max-height: 100vh;
