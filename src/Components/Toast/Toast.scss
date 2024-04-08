@@ -1,0 +1,61 @@
+@import "../../colors";
+
+.toast {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+
+  &.success {
+    background-color: $primary-background;
+    // left: 20%;
+    bottom: 2.4rem;
+    animation: myAnim 3s linear 0s 1 normal none;
+  }
+
+  &.error {
+    background-color: $secondary-background;
+    // left: 40%;
+    bottom: 4.8rem;
+    animation: myError 2s ease 0s 3 normal none;
+  }
+
+  &.info {
+    background-color: $accent-color;
+    // left: 60%;
+    animation: myAnim 3s linear 0s 1 normal none;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes myError {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
