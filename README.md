@@ -22,3 +22,7 @@ Written in Typescript and its integratable into any React project.
 ```bash
 npm install
 ```
+
+# Toast Komponent
+
+En toast-komponent kommer upp när något t.ex. har lyckats/misslyckats som ett pop-up meddelande.
