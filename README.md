@@ -1,6 +1,6 @@
 # React Expandable Sidebar Component
 
-This component provides an expandabke sidebar that toggles between expanded and collapsed state based on mouseover events.
+This component provides an expandable sidebar that toggles between expanded and collapsed state based on mouseover events.
 
 Written in Typescript and its integratable into any React project.
 
