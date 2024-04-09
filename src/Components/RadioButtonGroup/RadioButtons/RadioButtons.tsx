@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-import "../sass/styles.scss";
-
-// type RadioButtonsProps = {
-// 	optionsArray: any[]
-// selecterRadioOption: string;
-
-// 	// handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-// };
+import "./styles.scss";
 
 type RadioProps = {
   optionsArray: { name: string }[];
@@ -38,7 +31,6 @@ const RadioButtons: React.FC<RadioProps> = ({ optionsArray, FormHeader }) => {
           ))}
         </form>
       </div>
-      {/* <h1>{selectedRadioOption}</h1> */}
     </>
   );
 };
