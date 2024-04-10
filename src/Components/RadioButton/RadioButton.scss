@@ -1,0 +1,40 @@
+@use "/src/colors" as *;
+
+.radioContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  max-width: fit-content;
+  min-height: fit-content;
+  padding: 1.2rem;
+  background-color: $secondary-background;
+  color: White;
+
+  border: 1px solid $text-highlight-color;
+  border-radius: 1rem;
+
+  .labels {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 4px 10px;
+      color: $text-highlight-color;
+    }
+  }
+
+  .Options {
+    appearance: none;
+    border: 2px solid limegreen;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 2rem;
+    height: 2rem;
+
+    &:checked {
+      border-color: $text-highlight-color;
+      background-color: $text-highlight-color;
+    }
+  }
+}

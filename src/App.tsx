@@ -3,6 +3,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Toast from "./Components/Toast/Toast";
 import RadioButtons from "./Components/RadioButtonGroup/RadioButtons/RadioButtons";
 import Listbox from "./Components/Listbox/Listbox";
+import RadioButton from "./Components/RadioButton/RadioButton";
 
 function App() {
   const items = ["Home", "About", "Services", "Contact"];
@@ -22,6 +23,7 @@ function App() {
     { id: 7, name: "Charlie Quinn", unavailable: false },
     { id: 8, name: "Skyler Brooks", unavailable: false },
   ];
+  const plans = ["Student", "Premium", "Free"];
   return (
     <>
       <Sidebar items={items} />
@@ -33,6 +35,7 @@ function App() {
         optionsArray={RadioButtonsArray}
       />{" "}
       <Listbox people={people} />
+      <RadioButton plans={plans} PlanHeader="Choose Plan" />
     </>
   );
 }
