@@ -4,6 +4,7 @@ import Toast from "./Components/Toast/Toast";
 import RadioButtons from "./Components/RadioButtonGroup/RadioButtons/RadioButtons";
 import Listbox from "./Components/Listbox/Listbox";
 import RadioButton from "./Components/RadioButton/RadioButton";
+import Cards from "./Components/Cards/Cards";
 
 function App() {
   const items = ["Home", "About", "Services", "Contact"];
@@ -13,6 +14,8 @@ function App() {
     { name: "Option 3" },
     { name: "Option 4" },
   ];
+
+  const cardsData = [{ text: "HEJ" }, { text: "PÅ" }, { text: "DIG" }];
   const people = [
     { id: 1, name: "Alexa Green", unavailable: false },
     { id: 2, name: "Jordan Smith", unavailable: false },
@@ -36,6 +39,7 @@ function App() {
       />{" "}
       <Listbox people={people} />
       <RadioButton plans={plans} PlanHeader="Choose Plan" />
+      <Cards cards={cardsData} />
     </>
   );
 }
