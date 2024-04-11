@@ -20,9 +20,12 @@ const RadioButton: React.FC<Plans> = ({ plans, PlanHeader }) => {
   return (
     <>
       <div className="radioContainer">
-        <h2>{PlanHeader}</h2>
+        <h2 className="radioHeader">{PlanHeader}</h2>
         {plans.map((option) => (
-          <label className="labels" key={option}>
+          <label
+            className={`labels ${plan === option ? "checked" : ""}`}
+            key={option}
+          >
             <input
               className="Options"
               type="radio"
