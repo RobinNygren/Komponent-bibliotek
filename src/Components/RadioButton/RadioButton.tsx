@@ -6,8 +6,6 @@ type Plans = {
   PlanHeader: string;
 };
 
-/* const plans = ["Student", "Premium", "Free"]; */
-
 const RadioButton: React.FC<Plans> = ({ plans, PlanHeader }) => {
   const [plan, setPlan] = useState(plans[0]);
 
